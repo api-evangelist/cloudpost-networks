@@ -1,8 +1,12 @@
 aid: cloudpost-networks
 name: Cloudpost Networks
-description: Cloudpost Networks is a company surfaced as a portfolio company of wing-venture-capital and
-  added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: CloudPost Networks is a Santa Clara, California device-security company founded in 2015 that
+  rebranded as Ordr (ordr.net). It builds an AI-powered device intelligence and network-security platform
+  that discovers, classifies, and secures connected devices across IT, IoT, OT, and IoMT environments,
+  tying device identity to behavioral analytics so organizations can detect risk and automatically apply
+  micro-segmentation and enforcement policies. Ordr serves 500+ healthcare, banking, and manufacturing
+  organizations and integrates with vendors such as Cisco, Palo Alto Networks, CrowdStrike, and Fortinet.
+  It maintains SOC 2 Type 2 compliance. No public developer API, OpenAPI, or developer portal is published.
 url: https://raw.githubusercontent.com/api-evangelist/cloudpost-networks/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,11 +14,31 @@ x-backed-by:
 - wing-venture-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://ordr.net/og-default.jpg
 tags:
 - Company
+- Security
+- Device Security
+- IoT
+- OT
+- IoMT
+- Network Segmentation
+- Asset Intelligence
+- Healthcare
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +46,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/cloudpost-networks-domain-security.yml
 - type: Website
   url: https://ordr.net/
+- type: Documentation
+  url: https://ordr.net/learn
+- type: Support
+  url: https://ordr.net/support
+- type: Blog
+  url: https://ordr.net/blog/
+- type: Compliance
+  url: https://ordr.net/blog/a-closer-look-soc2-journey
+- type: PrivacyPolicy
+  url: https://ordr.net/privacy-policy
+- type: TermsOfService
+  url: https://ordr.net/terms-of-service
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
